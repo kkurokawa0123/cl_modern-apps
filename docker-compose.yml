@@ -8,3 +8,4 @@ services:
       - "8000:8000"
     volumes:
       - ./frontend:/poke_app/frontend
+      - /poke_app/frontend/node_modules
