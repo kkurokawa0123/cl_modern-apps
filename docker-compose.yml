@@ -1,0 +1,10 @@
+#version: "3"
+services:
+  # Vite React フロントエンド
+  front:
+    build: ./frontend
+    command: npm run dev
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./frontend:/poke_app/frontend
