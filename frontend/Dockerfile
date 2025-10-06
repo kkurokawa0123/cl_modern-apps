@@ -6,9 +6,9 @@ WORKDIR /poke_app/frontend
 
 
 # パッケージファイルをコピー
-# COPY package.json package-lock.json ./
+COPY package.json package-lock.json /poke_app/frontend/
 
 # # 依存関係をインストール
-# RUN npm install
+RUN npm install
 
 CMD ["npm","run","dev"]
