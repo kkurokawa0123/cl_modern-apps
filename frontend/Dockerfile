@@ -5,10 +5,10 @@ RUN mkdir -p /poke_app/frontend
 WORKDIR /poke_app/frontend
 
 
-# パッケージファイルをコピー
+# # パッケージファイルをコピー
 COPY package.json package-lock.json /poke_app/frontend/
 
-# # 依存関係をインストール
+# # # # 依存関係をインストール
 RUN npm install
 
 CMD ["npm","run","dev"]
